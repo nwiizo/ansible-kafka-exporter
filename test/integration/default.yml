@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  roles:
+    - role: contentwise.java
+    - role: contentwise.zookeeper
+    - role: contentwise.kafka
+    - role: contentwise.kafka-exporter
